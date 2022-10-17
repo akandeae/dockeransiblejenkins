@@ -1,4 +1,4 @@
-pipeline{
+/**pipeline{
     agent any
     tools {
       maven 'maven3'
@@ -47,4 +47,4 @@ pipeline{
 def getVersion(){
     def commitHash = sh label: '', returnStdout: true, script: 'git rev-parse --short HEAD'
     return commitHash
-}
+}*/
