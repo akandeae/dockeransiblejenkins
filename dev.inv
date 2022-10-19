@@ -1,3 +1,2 @@
 [hosts]
-172.31.86.221
-
+172.31.86.221 ansible_user=ec2-user
