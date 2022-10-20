@@ -26,13 +26,13 @@
         name: docker-py
         state: present
         
-    - 
-       name: Start the container
-       docker_container:
-        name: app:1.1
+   - 
+      docker_container: 
         image: "akandeae/app:1.1"
+        name: "app:1.1"
+        published_ports: 
+          - "0.0.0.0:8080:8080"
         state: started
-        published_ports:
-          - 0.0.0.0:8080:8080
+      name: "Start the container" 
       
  
