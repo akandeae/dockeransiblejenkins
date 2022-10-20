@@ -9,15 +9,17 @@
         name: python-pip
         state: present
    
-   - name: Install docker.
-    package:
-      name: docker-ce
-      state: present
+    - 
+      name: Install docker.
+      package:
+        name: docker-ce
+        state: present
       
-  - name: Start docker service
-    service:
-      name: docker
-      state: started 
+    - 
+      name: Start docker service
+      service:
+        name: docker
+        state: started 
     - 
       name: "Install docker-py python module"
       pip: 
