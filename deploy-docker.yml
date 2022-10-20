@@ -8,4 +8,11 @@
       yum: 
         name: python-pip
         state: present
+        
+    -
+      name: Install docker
+        yum:
+          name: docker
+          state: present
+
    
